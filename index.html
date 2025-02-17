@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedExel - Your Health, Our Priority</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563EB;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .cta-button {
+            background-color: #2563EB;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Main content styles */
+        main {
+            margin-top: 80px;
+        }
+        .hero {
+            background-color: #F3F4F6;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h2 {
+            font-size: 2.5rem;
+            color: #2563EB;
+        }
+        .services, .special-services {
+            padding: 4rem 0;
+            background-color: #F3F4F6;
+        }
+        .services h2, .special-services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .doctors {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .doctor-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .doctor-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .contact {
+            padding: 4rem 0;
+            text-align: center;
+            background-color: #F3F4F6;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1F2937;
+            color: #fff;
+            padding: 4rem 0 2rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+        }
+        .language-selector button {
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            margin-left: 0.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+            }
+            nav ul li {
+                margin: 0.5rem;
+            }
+            .stats {
+                flex-direction: column;
+            }
+            .stat {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">MedExel</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#consultation" class="cta-button">Try Free Consultation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>We Are Ready to Help Your Health Problems</h1>
+                <p>In times like today, your health is very important, especially since the number of COVID-19 cases is increasing day by day, so we are ready to help you with your health consultation</p>
+                <a href="#" class="cta-button">Let's Get Started</a>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat">
+                <h2>200+</h2>
+                <p>Active Doctor</p>
+            </div>
+            <div class="stat">
+                <h2>15K+</h2>
+                <p>Active User</p>
+            </div>
+            <div class="stat">
+                <h2>50+</h2>
+                <p>Active Pharmacy</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Our Main Services Categories</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>Chat with doctor</h3>
+                        <p>You can connect directly, quickly and easily, and there is no need to doubt the quality of the consultation and treatment offered.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>First Aid and Wound Care</h3>
+                        <p>Get priority services in hospitals with MedExel. Which allows you to go to the hospital more practically in Emergency and Urgent Care.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Health Store</h3>
+                        <p>Talk about the health complaints you are experiencing and don't hesitate to ask about the proper treatment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-services">
+            <div class="container">
+                <h2>Our Special Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <h3>Covid-19 Test</h3>
+                        <p>Prevention and Testing, Rapid and PCR Testing, Antibody Testing, Diagnosis and Initial Care.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Herbal Supplement</h3>
+                        <p>Herbal medicine uses plant-based substances to support healing and maintain health. These treatments are often used as a natural alternative or complement to conventional medicine.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Laboratory Test</h3>
+                        <p>1. Blood Tests<br>2. Infection and Immunity Tests<br>3. Hormonal and Reproductive Health Tests<br>4. Additional Services</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Health care regular</h3>
+                        <p>1. General Medical Services<br>2. Diagnostic Services<br>3. Women's Health Services</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="doctors" class="doctors">
+            <div class="container">
+                <h2>Our Doctors</h2>
+                <div class="doctor-card">
+                    <img src="https://via.placeholder.com/150" alt="Dr. James Wellington">
+                    <h3>Dr. James Wellington</h3>
+                    <p>Orthopedy</p>
+                    <a href="#" class="cta-button">Read More</a>
+                </div>
+                <a href="#" class="cta-button">View All Doctors</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>For your health contact us:</h2>
+                <p>+48 555 665 9999</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Find Doctors</h3>
+                    <ul>
+                        <li>Neurologists</li>
+                        <li>Psychiatrists</li>
+                        <li>Oncologists</li>
+                        <li>Dermatologists</li>
+                        <li>Cardiologists</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Staff</h3>
+                    <ul>
+                        <li>Manager</li>
+                        <li>Offer jobs</li>
+                        <li>SEO</li>
+                        <li>Help desk support</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li>Terms</li>
+                        <li>Privacy Policy</li>
+                        <li>How it Works</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>More</h3>
+                    <ul>
+                        <li>License</li>
+                        <li>Documentation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2023. Created with love.</p>
+                <div class="language-selector">
+                    <button>PL</button>
+                    <button>EN</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
